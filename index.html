@@ -153,6 +153,51 @@
     margin: 0 auto;
     text-align: center;
 }
+/* =============================================
+   MÓVIL Y RESPONSIVIDAD (PANTALLAS CHICAS)
+============================================= */
+@media (max-width: 768px) {
+    /* Menú superior en vertical */
+    header { 
+        flex-direction: column; 
+        gap: 15px; 
+        padding: 15px 5%; 
+        text-align: center;
+    }
+    nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+    nav a { margin: 0 8px; font-size: 14px; }
+    .btn-nav { padding: 8px 16px; font-size: 14px; }
+
+    /* Sección Principal (Hero) apilada */
+    .hero { flex-direction: column; gap: 30px; text-align: center; padding: 40px 5%; }
+    .hero-text h1 { font-size: 32px; }
+    .features-list li { font-size: 16px; justify-content: center; }
+    .hero-visual { max-width: 100%; width: 100%; }
+
+    /* Cuadrícula de servicios a 1 sola columna */
+    .services-grid { flex-direction: column; align-items: center; gap: 20px; }
+    .service-card { width: 90% !important; max-width: 340px; box-sizing: border-box; }
+
+    /* ADAPTACIÓN MÓVIL PARA LOS BOTONES FLOTANTES */
+    .service-card { overflow: visible; padding-bottom: 70px; } /* Espacio abajo para el botón */
+    .cv-overlay {
+        position: absolute; top: auto; bottom: 15px; left: 0; 
+        height: auto; width: 100%; background: transparent; 
+        opacity: 1 !important; /* Siempre visible en celulares */
+    }
+    .btn-cv { width: 85%; margin: 0 auto; box-shadow: 0 4px 10px rgba(255,79,0,0.2); }
+
+    /* Ajustes del bloque Parallax en celulares */
+    .seccion-parallax { background-attachment: scroll; padding: 60px 5%; } /* Quita el parallax pesado en móviles antiguos */
+    .seccion-parallax h2 { font-size: 26px; }
+    .seccion-parallax p { font-size: 15px; }
+
+    /* Formulario y Footer en móviles */
+    .form-section { padding: 40px 5%; }
+    .form-box { padding: 25px 20px; }
+    .footer-grid { flex-direction: column; gap: 30px; text-align: center; }
+    .footer-col h4::after { left: 50%; transform: translateX(-50%); } /* Centra las líneas naranjas del footer */
+}
 
     </style>
 </head>
@@ -199,7 +244,7 @@
                         <div class="dot"></div><div class="dot"></div><div class="dot"></div>
                     </div>
                     <div class="mockup-screen">
-                        <p style="color:#7F8C8D; margin:0 0 10px 0;">// Bienvenidos a GeoNEx</p>
+                        <p style="color:#7F8C8D; margin:0 0 10px 0;">// Bienvenidos a GeoNEx C.A</p>
                         <p style="margin:0 0 5px 0;">> GPS Telemetry: <span style="color:var(--primary-color)">ONLINE</span></p>
                         <p style="margin:0 0 5px 0;">> Hardware Sync: SUCCESS</p>
                         <p style="margin:0;">> CCTV Starting:...</p>
@@ -273,7 +318,7 @@
     <section class="form-section" id="contacto">
         <div class="form-box reveal-on-scroll" data-animation="animate__fadeInUp">
             <h3>¿Listo para dar el siguiente paso?</h3>
-            <p>Escríbenos y un asistente especializado de GeoNex se contactara contigo.</p>
+            <p>Escríbenos y un ingeniero especializado de GeoNex C.A. te armará una propuesta a la medida.</p>
             <form action="https://formsubmit.co/geonexca@gmail.com" method="POST">
     <!-- Configuración para evitar bloqueos en archivos locales (file:///) -->
     <input type="hidden" name="_captcha" value="false">
@@ -331,7 +376,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2026 GEONEX RIF 18824118-9. Todos los derechos reservados.</p>
+            <p>© 2026 GEONEX C.A. RIF J-18824118-9. Todos los derechos reservados.</p>
         </div>
     </footer>
 
