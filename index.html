@@ -6,8 +6,9 @@
     <title>GeoNex | Soluciones Tecnológicas</title>
     
     <!-- LIBRERÍAS REPARADAS (Animaciones + Iconos Profesionales) -->
-    <link rel="stylesheet" href="https://cloudflare.com"/>
-    <link rel="stylesheet" href="https://cloudflare.com">
+    <link rel="stylesheet" href="https://cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    
     
     <style>
         :root {
@@ -201,12 +202,13 @@
 
     </style>
 </head>
+  
 <body>
 
     <!-- Barra de contacto flotante lateral (Derecha) -->
     <div class="contact-floating">
         <a href="https://wa.link/m0snf2" target="_blank" class="elemento-barra-lateral" title="WhatsApp">
-            <i class="fab fa-whatsapp"></i>
+            <i class="fa-brands fa-square-whatsapp"></i>
         </a>
         <a href="mailto:geonexca@gmail.com" class="elemento-barra-lateral email" title="Escríbenos">
             <i class="fas fa-envelope"></i>
@@ -244,10 +246,10 @@
                         <div class="dot"></div><div class="dot"></div><div class="dot"></div>
                     </div>
                     <div class="mockup-screen">
-                        <p style="color:#7F8C8D; margin:0 0 10px 0;">// Bienvenidos a GeoNEx</p>
+                        <p style="color:#7F8C8D; margin:0 0 10px 0;">// Bienvenidos a GeoNEx C.A</p>
                         <p style="margin:0 0 5px 0;">> GPS Telemetry: <span style="color:var(--primary-color)">ONLINE</span></p>
                         <p style="margin:0 0 5px 0;">> Hardware Sync: SUCCESS</p>
-                        <p style="margin:0;">> CCTV Starting:...</p>
+                        <p style="margin:0;">> CCTV Starting: RECORDING</p>
                         <p style="margin:0;">> Arcade Systems: READY</p>
                     </div>
                 </div>
@@ -260,38 +262,49 @@
         <h2 class="reveal-on-scroll" data-animation="animate__fadeInUp">Nuestras Soluciones <span>Especializadas</span></h2>
         <p class="section-subtitle reveal-on-scroll" data-animation="animate__fadeInUp">Servicios profesionales de ingeniería aplicados a tus necesidades operativas.</p>
         
-        <div class="services-grid">
-            <div class="service-card reveal-on-scroll" data-animation="animate__fadeInUp" data-delay="0s">
-                <div class="icon">🛰️</div>
-                <h3>GPS y Telemetría</h3>
-                <p>Transmisión, Instalación de accesorios y Monitoreo de datos de localización en tiempo real para activos logísticos e industriales.</p>
-              <div class="cv-overlay">
-        <a href="https://www.copilotovirtual.cl/" target="_blank" class="btn-cv">Ver Trabajos</a>
-    </div>
+            <div class="services-grid"></div>
+        
+        <!-- Tarjeta 1: GPS y Telemetría -->
+        <div class="service-card reveal-on-scroll" data-animation="animate__fadeInUp" data-delay="0s">
+            <div class="icon">🛰️</div>
+            <h3>GPS y Telemetría</h3>
+            <p>Transmisión, Instalación de accesorios y Monitoreo de datos de localización en tiempo real para activos logísticos e industriales.</p>
+            <div class="cv-overlay">
+                <a href="https://copilotovirtual.cl" target="_blank" class="btn-cv">Ver Trabajos</a>
             </div>
-            <div class="service-card reveal-on-scroll" data-animation="animate__fadeInUp" data-delay="0.5s">
-                <div class="icon">💻</div>
-                <div class="cv-overlay">
+        </div>
+
+        <!-- Tarjeta 2: Soporte PC / Mac -->
+        <div class="service-card reveal-on-scroll" data-animation="animate__fadeInUp" data-delay="0.5s">
+            <div class="icon">💻</div>
+            <h3>Soporte PC / Mac</h3>
+            <p>Formateo avanzado, optimización extrema de sistemas y mantenimiento correctivo de hardware corporativo y Hogar.</p>
+            <div class="cv-overlay">
                 <a href="#contacto" class="btn-cv">Contacto</a>
-                </div>
-                <h3>Soporte PC / Mac</h3>
-                <p>Formateo avanzado, optimización extrema de sistemas y mantenimiento correctivo de hardware corporativo y Hogar.</p>
             </div>
-            <div class="service-card reveal-on-scroll" data-animation="animate__fadeInUp" data-delay="0.7s">
-                <div class="icon">🌐</div>
-                <h3>CCTV e Infraestructura</h3>
-                <p>Instalación, cableado estructurado y configuración robusta de redes de datos inalámbricas y cableadas.</p>
-            </div>
-            <div class="service-card reveal-on-scroll" data-animation="animate__fadeInUp" data-delay="1.1s">
-                <div class="icon">⚡</div>
-                <h3>Electrónica y Software</h3>
-                <p>Análisis y diagnóstico de circuitos y hardware.</p>
-            </div>
-            <div class="service-card reveal-on-scroll" data-animation="animate__fadeInUp" data-delay="1.4s">
-                <div class="icon">🕹️</div>
-                <h3>Máquinas Arcade</h3>
-                <p>Mantenimiento, restauración, actualización y soporte técnico de sistemas de entretenimiento Arcade.</p>
-            </div>
+        </div>
+
+        <!-- Tarjeta 3: CCTV e Infraestructura -->
+        <div class="service-card reveal-on-scroll" data-animation="animate__fadeInUp" data-delay="0.7s">
+            <div class="icon">🌐</div>
+            <h3>CCTV e Infraestructura</h3>
+            <p>Instalación, cableado estructurado y configuración robusta de redes de datos inalámbricas y cableadas.</p>
+        </div>
+
+        <!-- Tarjeta 4: Electrónica y Software -->
+        <div class="service-card reveal-on-scroll" data-animation="animate__fadeInUp" data-delay="1.1s">
+            <div class="icon">⚡</div>
+            <h3>Electrónica y Software</h3>
+            <p>Análisis y diagnóstico de circuitos y hardware.</p>
+        </div>
+
+        <!-- Tarjeta 5: Máquinas Arcade -->
+        <div class="service-card reveal-on-scroll" data-animation="animate__fadeInUp" data-delay="1.4s">
+            <div class="icon">🕹️</div>
+            <h3>Máquinas Arcade</h3>
+            <p>Mantenimiento, restauración, actualización y soporte técnico de sistemas de entretenimiento Arcade.</p>
+        </div>
+
             <div class="service-card sobre-mi-card reveal-on-scroll" data-animation="animate__fadeInUp" data-delay="1.7s">
     <div class="icon">🧠</div>
     <h3>Sobre Mi</h3>
@@ -302,7 +315,7 @@
     </div>
 </div>
 
-    </section>
+              </section>
     <!-- Bloque Separador Parallax Estilo Copiloto Virtual -->
     <section class="seccion-parallax reveal-on-scroll" data-animation="animate__fadeIn" style="background-image: url('https://unsplash.com');">
         <div class="contenido-parallax">
