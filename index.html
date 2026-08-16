@@ -838,24 +838,62 @@ cards.forEach(card => {
     overflow: hidden;
 }
 
-.hero::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 160%;
-    height: 100%; /* Ajusta el porcentaje según lo que quieras cubrir */
+.hero {
+    min-height: 100vh; /* Ocupa toda la pantalla */
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-top: 120px; /* Para que el menú no tape el texto */
+}
+.hero {
     background-image: url("https://s18391.pcdn.co/wp-content/uploads/2023/05/aperia-tech-tire-maintenance-1400.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.45; /* Para que el texto no se pierda */
+  
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    min-height: 50vh; /* Ocupa toda la pantalla */
+    display: flex;
+    align-items: center;
+    padding-top: 150px; /* Para que el menú no tape el texto */
+}
+
+/* Fondo fullscreen con opacidad y estilo original */
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0; /* Ocupa toda la sección */
+    background-image: url("https://s18391.pcdn.co/wp-content/uploads/2023/05/aperia-tech-tire-maintenance-1400.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.50; /* Ajusta la opacidad aquí */
     z-index: 0;
 }
 
+/* Asegura que el texto quede encima */
 .hero * {
     position: relative;
     z-index: 2;
+}
+
+.hero-text {
+    background: linear-gradient(to bottom, #0F1216, #161B22);
+    border: 1px solid rgba(255, 79, 0, 0.45);
+    border-radius: 12px;
+    padding: 35px 40px;
+    box-shadow: 0 0 18px rgba(255, 79, 0, 0.12);
+    backdrop-filter: blur(4px);
+    max-width: 520px; /* Ajusta si quieres más ancho */
+}
+.hero-text h1,
+.hero-text p,
+.hero-text li {
+    color: #FFFFFF;
 }
 
 
@@ -1198,3 +1236,4 @@ cards.forEach(card => {
 
 </body>
 </html>
+
