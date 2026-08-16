@@ -172,20 +172,10 @@
         /* ============================
            HERO
            ============================ */
-        .hero-container {
-            background: radial-gradient(circle at 90% 10%, #FFF4EE 0%, #FFFFFF 60%);
-            padding: 80px 8%;
-        }
-
-        .hero {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            flex-wrap: wrap;
-            gap: 40px;
-        }
+       .hero-container {
+    padding: 0;
+    margin: 0;
+}
 
         .hero-text {
             flex: 1.2;
@@ -738,14 +728,14 @@
 .services-coverflow {
     display: flex;
     gap: 10px; /* separación corregida */
-    padding: 40px 0;
-    perspective: 1200px;
+    padding: 30px 0;
+    perspective: 1100px;
     overflow-x: auto;
     scroll-behavior: smooth;
     justify-content: flex-start; /* evita corte en la izquierda */
 }
 .service-card:hover {
-    transform: scale(1.2) rotateY(0deg) !important;
+    transform: scale(1.1) rotateY(0deg) !important;
     opacity: 1 !important;
     z-index: 5 !important;
 }
@@ -900,6 +890,10 @@ cards.forEach(card => {
     z-index: 2;
 }
 
+        .hero-visual {
+    margin-top: 40px; /* Ajusta entre 20 y 80 según lo que te guste */
+}
+
 </style>
     </style>
 </head>
@@ -975,8 +969,8 @@ cards.forEach(card => {
 
                 <div class="mockup-screen" style="padding:0; overflow:hidden;">
                     <iframe 
-                        width="100%" 
-                        height="260"
+                        width="150%" 
+                        height="250"
                         src="https://www.youtube.com/embed/3_eaNM1YeWM?autoplay=1&mute=1&loop=1&playlist=3_eaNM1YeWM&controls=0&modestbranding=1&rel=0"
                         frameborder="0"
                         allow="autoplay; encrypted-media"
