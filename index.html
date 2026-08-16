@@ -833,49 +833,46 @@ cards.forEach(card => {
     background: #E1306C; /* Color oficial de Instagram */
 }
 
-       .hero {
-    position: relative;
-    overflow: hidden;
-}
-
-.hero {
-    min-height: 100vh; /* Ocupa toda la pantalla */
-    display: flex;
-    align-items: center;
-    position: relative;
-    padding-top: 120px; /* Para que el menú no tape el texto */
-}
-.hero {
-    background-image: url("https://s18391.pcdn.co/wp-content/uploads/2023/05/aperia-tech-tire-maintenance-1400.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  
-}
+     /* ============================
+   HERO GEO-NEX — VERSIÓN FINAL
+   ============================ */
 
 .hero {
     position: relative;
     overflow: hidden;
-    min-height: 50vh; /* Ocupa toda la pantalla */
+    min-height: 100vh;
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding-top: 150px; /* Para que el menú no tape el texto */
+    flex-direction: column;
+    padding-top: 150px;
+    text-align: center;
 }
 
-/* Fondo fullscreen con opacidad y estilo original */
 .hero::after {
     content: "";
     position: absolute;
-    inset: 0; /* Ocupa toda la sección */
+    inset: 0;
     background-image: url("https://s18391.pcdn.co/wp-content/uploads/2023/05/aperia-tech-tire-maintenance-1400.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.50; /* Ajusta la opacidad aquí */
+    opacity: 0.20;
     z-index: 0;
 }
 
-/* Asegura que el texto quede encima */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("TU_IMAGEN_DE_VEHICULOS_AQUI");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.35;
+    z-index: -1;
+}
+
 .hero * {
     position: relative;
     z-index: 2;
@@ -888,21 +885,17 @@ cards.forEach(card => {
     padding: 35px 40px;
     box-shadow: 0 0 18px rgba(255, 79, 0, 0.12);
     backdrop-filter: blur(4px);
-    max-width: 520px; /* Ajusta si quieres más ancho */
+    max-width: 520px;
 }
+
 .hero-text h1,
 .hero-text p,
 .hero-text li {
     color: #FFFFFF;
 }
 
-.hero {
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center;     /* Centra verticalmente */
-    text-align: center;      /* Centra el texto */
-    flex-direction: column;  /* Asegura que todo quede en columna */
-}
+</style>
+
 
     </style>
 </head>
