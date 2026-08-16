@@ -729,13 +729,13 @@
     display: flex;
     gap: 10px; /* separación corregida */
     padding: 30px 0;
-    perspective: 1100px;
+    perspective: 1000px;
     overflow-x: auto;
     scroll-behavior: smooth;
     justify-content: flex-start; /* evita corte en la izquierda */
 }
 .service-card:hover {
-    transform: scale(1.1) rotateY(0deg) !important;
+    transform: scale(1.0) rotateY(0deg) !important;
     opacity: 1 !important;
     z-index: 5 !important;
 }
@@ -751,12 +751,12 @@ cards.forEach(card => {
 
 
 .services-coverflow::-webkit-scrollbar {
-    height: 8px;
+    height: 15px;
 }
 
 .services-coverflow::-webkit-scrollbar-thumb {
     background: var(--primary-color);
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .service-card {
@@ -767,21 +767,21 @@ cards.forEach(card => {
 
 /* Tarjeta activa (centro) */
 .service-card.active {
-    transform: scale(0.9) rotateY(0deg);
+    transform: scale(0.7) rotateY(0deg);
     opacity: 1;
     z-index: 3;
 }
 
 /* Tarjetas a la izquierda */
 .service-card.left {
-    transform: scale(0.9) rotateY(35deg);
+    transform: scale(0.7) rotateY(35deg);
     opacity: 0.7;
     z-index: 1;
 }
 
 /* Tarjetas a la derecha */
 .service-card.right {
-    transform: scale(0.9) rotateY(-35deg);
+    transform: scale(0.7) rotateY(-35deg);
     opacity: 0.7;
     z-index: 1;
 }
