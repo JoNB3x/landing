@@ -829,31 +829,8 @@ cards.forEach(card => {
 .form-box p {
     color: #FFFFFF !important;
 }
-
-        /* ============================
-   BOTÓN FLOTANTE INSTAGRAM
-   ============================ */
-
-.instagram-btn {
-    position: fixed;
-    right: 0px;
-    bottom: 330px; /* Ajusta para que quede encima del email */
+.elemento-barra-lateral.instagram {
     background: #E1306C; /* Color oficial de Instagram */
-    padding: 12px;
-    border-radius: 12px;
-    box-shadow: 0 0 12px rgba(225, 48, 108, 0.45);
-    z-index: 999;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.instagram-btn img {
-    width: 28px;
-    height: 28px;
-}
-
-.instagram-btn:hover {
-    transform: scale(1.15);
-    box-shadow: 0 0 18px rgba(225, 48, 108, 0.65);
 }
 
     </style>
@@ -872,10 +849,12 @@ cards.forEach(card => {
     <a href="mailto:geonexca@gmail.com" class="elemento-barra-lateral email" title="Escríbenos">
         <i class="fas fa-envelope"></i>
     </a>
-  <a href="https://instagram.com/geonexca" target="_blank" class="floating-btn instagram-btn">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+  <a href="https://instagram.com/geoenxca" target="_blank" class="elemento-barra-lateral instagram" title="Instagram">
+    <i class="fa-brands fa-instagram"></i>
 </a>
 
+
+  
 </div>
 </div>
 
@@ -1193,3 +1172,4 @@ cards.forEach(card => {
 
 </body>
 </html>
+
