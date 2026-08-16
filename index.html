@@ -833,6 +833,32 @@ cards.forEach(card => {
     background: #E1306C; /* Color oficial de Instagram */
 }
 
+       .hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 55%; /* Ajusta el porcentaje según lo que quieras cubrir */
+    background-image: url("https://s18391.pcdn.co/wp-content/uploads/2023/05/aperia-tech-tire-maintenance-1400.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.45; /* Para que el texto no se pierda */
+    z-index: 0;
+}
+
+.hero * {
+    position: relative;
+    z-index: 2;
+}
+
+
     </style>
 </head>
 
@@ -849,7 +875,7 @@ cards.forEach(card => {
     <a href="mailto:geonexca@gmail.com" class="elemento-barra-lateral email" title="Escríbenos">
         <i class="fas fa-envelope"></i>
     </a>
-  <a href="https://instagram.com/geonexca" target="_blank" class="elemento-barra-lateral instagram" title="Instagram">
+  <a href="https://instagram.com/geoenxca" target="_blank" class="elemento-barra-lateral instagram" title="Instagram">
     <i class="fa-brands fa-instagram"></i>
 </a>
 
@@ -1172,4 +1198,3 @@ cards.forEach(card => {
 
 </body>
 </html>
-
